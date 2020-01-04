@@ -1,0 +1,23 @@
+.ahaar-header {
+  .container {
+    display: flex;
+    align-items: center;
+    .branding {
+      a.logo-link {
+        max-width: 12.923em;
+        padding-bottom: 5px;
+        display: block;
+        img {
+          height: auto;
+          max-width: 100%;
+          width: 100%;
+        }
+      }
+    }
+    .main-navigation {
+      min-height: 5.462em;
+      background-color: transparent;
+      flex: 1;
+    }
+  }
+}
