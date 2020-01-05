@@ -1,0 +1,28 @@
+/**********PRIMARY BUTTON*******************/
+.btn-primary-ah {
+  color: $ahaar_white;
+  background-color: $ahaar_primary;
+  border-color: $ahaar_primary;
+  &:hover {
+    color: $ahaar_white;
+    background-color: $ahaar_primary_dark;
+    border-color: $ahaar_primary_dark;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $ahaar_primary_light;
+  }
+}
+
+/**********SECONDARY BUTTON*******************/
+.btn-secondary-ah {
+  color: $ahaar_primary;
+  border-color: $ahaar_primary;
+  &:hover {
+    color: $ahaar_white;
+    background-color: $ahaar_primary_dark;
+    border-color: $ahaar_primary_dark;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem $ahaar_primary_light;
+  }
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../../../ahaar.png";
+import Button from "../button";
 
 export default Headers = () => {
   return (
@@ -11,7 +12,16 @@ export default Headers = () => {
           </a>
         </div>
         <nav className="main-navigation"></nav>
-        <nav className="main-navigation-right">Login & SignIN</nav>
+        <nav className="main-navigation-right">
+          <ul>
+            <li>
+              <Button secondary>Sign In</Button>
+            </li>
+            <li>
+              <Button primary>Login</Button>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
   );

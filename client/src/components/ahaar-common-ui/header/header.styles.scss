@@ -19,5 +19,14 @@
       background-color: transparent;
       flex: 1;
     }
+    .main-navigation-right {
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }
