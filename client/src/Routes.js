@@ -6,7 +6,7 @@ import DashBoard from "./components/main-components/DashBoard";
 const Routes = () => {
   return (
     <Router>
-      <div>
+      <div className="container">
         <Switch>
           <Route path="/home">
             <Home />
