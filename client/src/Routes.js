@@ -5,18 +5,16 @@ import DashBoard from "./components/main-components/DashBoard";
 
 const Routes = () => {
   return (
-    <Router>
-      <div className="container">
-        <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/dashboard">
-            <DashBoard />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
+    <div className="container">
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/dashboard">
+          <DashBoard />
+        </Route>
+      </Switch>
+    </div>
   );
 };
 

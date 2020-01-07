@@ -1,9 +1,13 @@
+body {
+  font-family: "Muli", sans-serif;
+}
 @import "./colors.scss";
 
 /*********COMMON-COMP****************************/
 @import "../components/ahaar-common-ui/header/header.styles.scss";
 @import "../components/ahaar-common-ui/button/button.style.scss";
 @import "../components/ahaar-common-ui/card/card.styles.scss";
+@import "../components/ahaar-common-ui/jumbotron/jumbotrone.styles.scss";
 
 /***************App-comp*************************/
 @import "../components/main-components/home/home.styles.scss";
