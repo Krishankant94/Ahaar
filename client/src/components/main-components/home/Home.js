@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import homeData from "../../../mockData/homePage.json";
+import homeData from "../../../staticData/homePage.json";
 import Card from "../../ahaar-common-ui/card";
 import Jumbotron from "../../ahaar-common-ui/jumbotron";
 
