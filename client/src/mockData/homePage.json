@@ -1,12 +1,19 @@
-[
-  {
-    "heading": "For Restorants",
-    "content": "We are the market–leading technical inteview platform to identify and hire developers with the right skills.",
-    "type": "restorant"
-  },
-  {
-    "heading": "For Users",
-    "content": "We are the market–leading technical inteview platform to identify and hire developers with the right skills.",
-    "type": "user"
-  }
-]
+{
+  "clsName": "ahaar-jumbo",
+  "jhead": "Food to make india healthy and fit",
+  "jlead": " This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.",
+  "children": [
+    {
+      "heading": "For Restorants",
+      "content": "We are the market–leading technical inteview platform to identify and hire developers with the right skills.",
+      "type": "restorant",
+      "containerClsName": "col-sm-6"
+    },
+    {
+      "heading": "For Users",
+      "content": "We are the market–leading technical inteview platform to identify and hire developers with the right skills.",
+      "type": "user",
+      "containerClsName": "col-sm-6"
+    }
+  ]
+}
