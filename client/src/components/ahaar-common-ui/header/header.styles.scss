@@ -15,9 +15,17 @@
       }
     }
     .main-navigation {
-      min-height: 5.462em;
       background-color: transparent;
       flex: 1;
+      ul {
+        display: flex;
+        list-style: none;
+        li {
+          a {
+            padding: 0.867em 0.633em;
+          }
+        }
+      }
     }
     .main-navigation-right {
       ul {

@@ -1,0 +1,12 @@
+{
+  "menuItems": [
+    {
+      "title": "Restorants",
+      "link": "Link1"
+    },
+    {
+      "title": "Recepies",
+      "link": "Link2"
+    }
+  ]
+}

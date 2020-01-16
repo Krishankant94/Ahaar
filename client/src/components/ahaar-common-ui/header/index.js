@@ -3,7 +3,7 @@ import logo from "../../../ahaar.png";
 import Button from "../button";
 import { Link } from "react-router-dom";
 
-export default Headers = () => {
+const Headers = ({ menuItems, IsLogin }) => {
   return (
     <header className="ahaar-header">
       <div className="container">
@@ -12,15 +12,23 @@ export default Headers = () => {
             <img width="334" height="36" alt="ahaar Logo" src={logo} />
           </Link>
         </div>
-        <nav className="main-navigation"></nav>
+        <nav className="main-navigation">
+          <ul>
+            {menuItems &&
+              menuItems.map(item => (
+                <li>
+                  <a href={item.link}>{item.title}</a>
+                </li>
+              ))}
+          </ul>
+        </nav>
         <nav className="main-navigation-right">
           <ul>
-            <li>
-              <Button secondary>Sign Up</Button>
-            </li>
+            <li>{!IsLogin ? <Button secondary>Sign Up</Button> : ""}</li>
           </ul>
         </nav>
       </div>
     </header>
   );
 };
+export default Headers;
