@@ -1,10 +1,10 @@
 import FetchApi from "./FetchApi";
-import { BaseURL } from "../constants/AppConstants";
+import { BaseURL } from "./ApiConstants";
 
-const Apis = {
-  getRestorants: function() {
-    return FetchApi(`${BaseURL}/getrestorants`);
-  }
-};
+function Apis() {
+  this.getRestorants = function() {
+    return FetchApi(`${BaseURL}/restorants`);
+  };
+}
 
-export default Apis;
+export default new Apis();
