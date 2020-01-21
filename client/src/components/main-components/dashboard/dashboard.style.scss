@@ -2,4 +2,11 @@
   .dashboard-collection {
     display: flex;
   }
+  .search-section {
+    display: flex;
+    justify-content: center;
+    .search-loc {
+      max-width: 400px;
+    }
+  }
 }

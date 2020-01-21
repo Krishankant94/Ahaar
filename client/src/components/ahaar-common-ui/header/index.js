@@ -15,8 +15,8 @@ const Headers = ({ menuItems, IsLogin }) => {
         <nav className="main-navigation">
           <ul>
             {menuItems &&
-              menuItems.map(item => (
-                <li>
+              menuItems.map((item, i) => (
+                <li key={i}>
                   <a href={item.link}>{item.title}</a>
                 </li>
               ))}

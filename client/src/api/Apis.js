@@ -6,5 +6,5 @@ function Apis() {
     return FetchApi(`${BaseURL}/restorants`);
   };
 }
-
-export default new Apis();
+const api = new Apis();
+export default api;
