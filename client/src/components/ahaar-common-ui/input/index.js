@@ -27,7 +27,6 @@ const Input = ({
 );
 Input.propTypes = {
   name: PropTypes.string.isRequired,
-  type: PropTypes.string,
   placeholder: PropTypes.string.isRequired,
   type: PropTypes.oneOf(["text", "number", "password"]),
   className: PropTypes.string,
