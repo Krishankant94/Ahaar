@@ -1,6 +1,19 @@
 .ahhar-main-dashboard {
   .dashboard-collection {
     display: flex;
+    flex-flow: row wrap;
+    .card {
+      max-width: 275px;
+      @media (min-width: 320px) {
+        /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+        max-width: none;
+      }
+
+      @media (min-width: 600px) {
+        /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+        max-width: 223px;
+      }
+    }
   }
   .search-section {
     display: flex;
