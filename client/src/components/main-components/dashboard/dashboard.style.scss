@@ -3,16 +3,8 @@
     display: flex;
     flex-flow: row wrap;
     .card {
-      max-width: 275px;
-      @media (min-width: 320px) {
-        /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-        max-width: none;
-      }
-
-      @media (min-width: 600px) {
-        /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-        max-width: 223px;
-      }
+      max-width: 260px;
+      margin: 8px;
     }
   }
   .search-section {
