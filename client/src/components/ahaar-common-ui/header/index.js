@@ -2,8 +2,11 @@ import React from "react";
 import logo from "../../../ahaar.png";
 import Button from "../button";
 import { Link } from "react-router-dom";
+import { useAuth0 } from "../../../react-auth0-spa";
 
-const Headers = ({ menuItems, IsLogin }) => {
+const Headers = ({ menuItems }) => {
+  const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
+
   return (
     <header className="ahaar-header">
       <div className="container">
@@ -24,7 +27,20 @@ const Headers = ({ menuItems, IsLogin }) => {
         </nav>
         <nav className="main-navigation-right">
           <ul>
-            <li>{!IsLogin ? <Button secondary>Sign Up</Button> : ""}</li>
+            {user && <li>{user.name}</li>}
+            <li>
+              {!isAuthenticated && (
+                <Button secondary onClick={() => loginWithRedirect({})}>
+                  Log in
+                </Button>
+              )}
+
+              {isAuthenticated && (
+                <Button secondary onClick={() => logout()}>
+                  Log out
+                </Button>
+              )}
+            </li>
           </ul>
         </nav>
       </div>
