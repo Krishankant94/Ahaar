@@ -7,6 +7,7 @@ import Button from "../../ahaar-common-ui/button";
 
 export default class Home extends Component {
   handleLogin = type => {
+    // test comment from sourabh
     console.log("Login for type", type);
   };
 
